@@ -597,7 +597,7 @@ margin-left: 16px;
 
 
 .mobile-menu {
-    padding: 72px 24px 40px 16px;
+    /* padding: 72px 24px 40px 16px; */
     width: 320px;
     height: 640px;
     background-color: #FFFFFF;
@@ -607,8 +607,10 @@ margin-left: 16px;
 .mobile-close-btn {
     
 }
-.menu-container{
-
+.mobile-menu-list{
+/* display: flex;
+flex-direction: column;
+gap: 40px; */
 }
 .menu-item{
     text-decoration: none;
