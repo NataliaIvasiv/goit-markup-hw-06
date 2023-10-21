@@ -597,20 +597,24 @@ margin-left: 16px;
 
 
 .mobile-menu {
-    /* padding: 72px 24px 40px 16px; */
-    width: 320px;
+    padding: 72px 24px 40px 16px;
+    max-width: 320px;
     height: 640px;
     background-color: #FFFFFF;
     position: relative;
-}
-
-.mobile-close-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
     
 }
+
 .mobile-menu-list{
-/* display: flex;
+ display: flex;
 flex-direction: column;
-gap: 40px; */
+gap: 40px; 
 }
 .menu-item{
     text-decoration: none;
@@ -623,8 +627,34 @@ gap: 40px; */
         letter-spacing: 0.02em;
         text-transform: capitalize;
 }
-
-
+.menu-item:focus{
+    color: #404BBF;
+}
+.menu-contacts-list{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.menu-address-text{
+    text-decoration: none;
+    color: #434455;
+font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    display: flex;
+    flex-direction: column;
+}
+.menu-address-text:focus{
+color: #404BBF;
+}
+.mobile-links{
+    margin-top: 48px;
+    gap: 40px;
+    margin-bottom: 0;
+}
 /* --------------modal----------++=================-------- */
 .backdrop{
     background-color: rgba(46, 47, 66, 0.40);
